@@ -32,7 +32,7 @@ function GithubUser() {
             </button>
                     </div>
                 </div>
-            <hr />
+            <div className="border-b-2 border-dashed border-b-slate-400"></div>
 
             <div className="user-details grid grid-cols-2 font-ligth text-sm md:text-md md:font-medium">
 

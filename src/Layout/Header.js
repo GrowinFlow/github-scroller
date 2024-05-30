@@ -11,7 +11,7 @@ function Header() {
       <header className='h-20 sticky top-0 z-30 flex justify-between items-center bg-slate-500 w-full mb-8 shadow-lg web-logo transition-all ease-in duration-100'>
         <nav className='container mx-auto px-4 flex justify-between items-center'>
         <div className="logo text-xl md:text-2xl font-bold text-shadow-md text-white">Github
-         <i class="fa-solid fa-laptop-code fa-bounce text-xl text-purple-700"></i>
+         <i class="fa-solid fa-laptop-code fa-bounce text-xl  text-slate-700 drop-shadow-lg px-1"></i>
          Scroller</div>
 
         <div className="dp-box flex items-center gap-2">

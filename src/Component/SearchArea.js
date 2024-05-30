@@ -7,7 +7,7 @@ function SearchArea() {
 
         <div className="search-form flex justify-center items-center p-2 h-16 w-2/3 bg-slate-500 rounded-lg gap-2 group">
             <input
-            className='w-full h-10 p-2 px-3 text-md md:text-xl font-medium focus:outline-none border-b-2 border-dashed focus:border-white border-slate-400 bg-slate-500'
+            className='w-full h-10 p-2 px-3 text-md md:text-xl  text-slate-700 drop-shadow-lg font-medium focus:outline-none border-b-2 border-dashed focus:border-white border-slate-400 bg-slate-500'
             placeholder='@username . . .'
             type="text"
              aria-label='search github profile' />
@@ -21,7 +21,7 @@ function SearchArea() {
 
         <div className="request-count h-16 flex justify-center items-center">
             <p className='text-xl md:text-2xl'>Requests : &nbsp;
-            <span className='text-purple-700 font-mono drop-shadow-2xl '>8</span>
+            <span className='text-slate-500 drop-shadow-2xl '>8</span>
             &nbsp;/ 10</p>
 
         </div>

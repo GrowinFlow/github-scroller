@@ -27,7 +27,7 @@ function Follower() {
                             </div>
     </div>
                     </div>
-                            <hr className='w-[98%]' />
+                    <div className="border-b-2 border-dashed border-b-slate-400 w-[98%]"></div>
     </>
   )
 }
