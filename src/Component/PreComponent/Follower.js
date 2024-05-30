@@ -20,7 +20,7 @@ function Follower() {
                                 <button
                                     className='px-2 md:px-4 py-1 md:py-2 text-sm flex justify-center items-center gap-2 bg-purple-700 rounded-lg shadow-md active:bg-purple-900 hover:bg-purple-800  ring-4 ring-transparent active:ring-purple-500'
                                 >
-                                    Follow <i class="fa-brands fa-github text-white"></i>
+                                    Visit <i class="fa-brands fa-github text-white"></i>
                                 </button>
                             </div>
                     </div>

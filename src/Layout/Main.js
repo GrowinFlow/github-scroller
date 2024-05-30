@@ -2,6 +2,7 @@ import React from 'react'
 import SearchArea from '../Component/SearchArea'
 import GitHubActivity from '../Component/GitHubActivity'
 import GithubUserFollwer from '../Component/GithubUserFollwer'
+import GithubGraphs from '../Component/GithubGraphs'
 
 
 function Main() {
@@ -12,6 +13,7 @@ function Main() {
       <SearchArea/>
       <GithubUserFollwer />
       <GitHubActivity />
+      <GithubGraphs />
 
 
 
