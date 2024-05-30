@@ -17,6 +17,7 @@
     left: 0;
     opacity: 1;
   }
+
   
   .scroll-bar::-webkit-scrollbar {
     width: 12px; /* Width of the scrollbar */
@@ -29,11 +30,11 @@
   }
   
   .scroll-bar::-webkit-scrollbar-thumb {
-    background-color: #ffffff; /* Color of the scrollbar thumb */
+    background-color: #334155; /* Color of the scrollbar thumb */
     border-radius: 6px; /* Rounded corners of the scrollbar thumb */
   }
   
   .scroll-bar::-webkit-scrollbar-thumb:hover {
-    background-color: #404b5a;
+    background-color: #fff;
 }
   

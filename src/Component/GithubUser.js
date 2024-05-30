@@ -19,7 +19,10 @@ function GithubUser() {
                             <img src={dp} alt="dp" />
                         </div>
                         <div className="usenames px-2">
-                            <div className="h-2/3 user text-lg md:text-3xl text-slate-700 drop-shadow-lg font-sans font-bold">Grow in Flow</div>
+                            <div className="h-2/3 user text-lg text-slate-700 drop-shadow-lg font-sans font-bold">  
+                            <img src="https://readme-typing-svg.demolab.com/?font=Gugi&pause=1000&color=334155&weight=700&multiline=true&random=true&width=435&lines=Grow+in+Flow" alt="User Name"/>
+
+                            </div>
                             <p className='h-1/3 text-xs md:text-md'>@growinflow</p>
                         </div>
                     </div>
