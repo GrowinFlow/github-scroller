@@ -12,25 +12,16 @@ function GithubFollowers() {
                 <div className="overflow-y-auto scroll-bar flex flex-col gap-2">
 
 <Follower/>
-                    <hr />
+                    
 <Follower/>
-                    <hr />
+                    
 <Follower/>
-                    <hr />
 <Follower/>
-                    <hr />
+                    
 <Follower/>
-                    <hr />
 <Follower/>
-                    <hr />
+                    
 <Follower/>
-                    <hr />
-<Follower/>
-                    <hr />
-<Follower/>
-                    <hr />
-<Follower/>
-                    <hr />
 
 
                 </div>

@@ -16,7 +16,6 @@ function Pie() {
     { id: 0, label: 'Js', value: 30 },
     { id: 1, label: 'C++', value: 80 },
     { id: 2, label: 'Py', value: 20 },
-    { id: 3, label: 'R', value: 10 },
   ];
 
   return (

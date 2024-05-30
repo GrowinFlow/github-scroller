@@ -19,7 +19,7 @@ function GithubUser() {
                             <img src={dp} alt="dp" />
                         </div>
                         <div className="usenames px-2">
-                            <div className="h-2/3 user text-lg md:text-3xl text-purple-700 font-sans font-bold">Grow in Flow</div>
+                            <div className="h-2/3 user text-lg md:text-3xl text-slate-700 drop-shadow-lg font-sans font-bold">Grow in Flow</div>
                             <p className='h-1/3 text-xs md:text-md'>@growinflow</p>
                         </div>
                     </div>
@@ -37,31 +37,31 @@ function GithubUser() {
             <div className="user-details grid grid-cols-2 font-ligth text-sm md:text-md md:font-medium">
 
                <div className="flex gap-2 items-center justify-start">
-                  <Key style="w-8 h-8 fill-slate-400"/>
+                  <Key style="w-8 h-8 fill-slate-700 drop-shadow-lg"/>
                 <p>#32940324</p>
                 </div>
                <div className="flex gap-2 items-center justify-start">
-                  <Name  style="w-8 h-8 fill-slate-400"/>
+                  <Name  style="w-8 h-8 fill-slate-700 drop-shadow-lg"/>
                 <p>Grow in Flow</p>
                 </div>
                <div className="flex gap-2 items-center justify-start">
-                  <Building  style="w-8 h-8 fill-slate-400"/>
+                  <Building  style="w-8 h-8 fill-slate-700 drop-shadow-lg"/>
                 <p>Dycoders</p>
                 </div>
                <div className="flex gap-2 items-center justify-start">
-                  <Location  style="w-8 h-8 fill-slate-400"/>
+                  <Location  style="w-8 h-8 fill-slate-700 drop-shadow-lg"/>
                 <p>PK</p>
                 </div>
                <div className="flex gap-2 items-center justify-start">
-                  <Celender  style="w-8 h-8 fill-slate-400"/>
+                  <Celender  style="w-8 h-8 fill-slate-700 drop-shadow-lg"/>
                 <p>2023-07-30T07:44:16Z</p>
                 </div>
                <div className="flex gap-2 items-center justify-start">
-                  <Update  style="w-8 h-8 fill-slate-400"/>
+                  <Update  style="w-8 h-8 fill-slate-700 drop-shadow-lg"/>
                 <p> 2024-05-08T13:21:51Z</p>
                 </div>
                <div className="col-span-2 flex gap-2 items-center justify-start">
-                  <Link  style="w-8 h-8 fill-slate-400"/>
+                  <Link  style="w-8 h-8 fill-slate-700 drop-shadow-lg"/>
                 <p>https://github.com/GrowinFlow</p>
                 </div>
             </div>

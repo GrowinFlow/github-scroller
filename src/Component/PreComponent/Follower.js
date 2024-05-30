@@ -6,13 +6,15 @@ function Follower() {
     <>
 
 <div className="follower flex items-center gap-4 justify-between pr-2">
+    <div className=" flex items-center gap-4 justify-between w-full">
+
                         <div className="userDetails flex justify-between items-center gap-4">
 
                             <div className="dp h-12 w-12 rounded-full overflow-hidden">
                                 <img src={dp} alt="dp" />
                             </div>
                             <div className="name">
-                                <div className="usename font-bold text-purple-700 text-lg">follower</div>
+                                <div className="usename font-bold text-slate-700 drop-shadow-lg text-lg">follower</div>
                                 <div className="link "><a href="githum.com" target='_blank'>https://github.com/user</a></div>
                             </div>
                         </div>
@@ -23,7 +25,9 @@ function Follower() {
                                     Visit <i class="fa-brands fa-github text-white"></i>
                                 </button>
                             </div>
+    </div>
                     </div>
+                            <hr className='w-[98%]' />
     </>
   )
 }
