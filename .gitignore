@@ -1,0 +1,12 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore build output
+build/
+
+# Ignore editor/IDE files
+.vscode/
+.idea/
+
+# Ignore log files
+*.log
