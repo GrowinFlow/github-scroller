@@ -9,7 +9,7 @@ import FavLanguages from './Graphs/FavLanguages'
 function GithubGraphs() {
   return (
     <>
-    <div className="grid grid-cols-1 grid-rows-4 md:grid-rows-2 md:grid-cols-3 lg:grid-cols-5 md:gap-4 min-h-72">
+    <div className="select-none grid grid-cols-1 grid-rows-4 md:grid-rows-2 md:grid-cols-3 lg:grid-cols-5 md:gap-4 min-h-72">
 
 
     <div className="col-span-1 mb-4 md:mb-0 lg:col-span-2 bg-slate-500 rounded-lg flex items-center justify-center">

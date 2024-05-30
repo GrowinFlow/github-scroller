@@ -5,7 +5,7 @@ function SearchArea() {
     <>
     <div className="search-area flex-col flex md:flex-row justify-between items-center">
 
-        <div className="search-form flex justify-center items-center p-2 h-16 w-2/3 bg-slate-500 rounded-lg gap-2 group">
+        <div className="search-form flex justify-center items-center p-2 h-16 w-full bg-slate-500 rounded-lg gap-2 group">
             <input
             className='w-full h-10 p-2 px-3 text-md md:text-xl  text-slate-700 drop-shadow-lg font-medium focus:outline-none border-b-2 border-dashed focus:border-white border-slate-400 bg-slate-500'
             placeholder='@username . . .'
@@ -19,7 +19,7 @@ function SearchArea() {
             </button>
         </div>
 
-        <div className="request-count h-16 flex justify-center items-center">
+        <div className="request-count h-16 w-80 flex justify-center items-center">
             <p className='text-xl md:text-2xl'>Requests : &nbsp;
             <span className='text-slate-500 drop-shadow-2xl '>8</span>
             &nbsp;/ 10</p>

@@ -3,6 +3,7 @@ import SearchArea from '../Component/SearchArea'
 import GitHubActivity from '../Component/GitHubActivity'
 import GithubUserFollwer from '../Component/GithubUserFollwer'
 import GithubGraphs from '../Component/GithubGraphs'
+import GithubRepositries from '../Component/GithubRepositries'
 
 
 function Main() {
@@ -14,6 +15,7 @@ function Main() {
       <GithubUserFollwer />
       <GitHubActivity />
       <GithubGraphs />
+      <GithubRepositries/>
 
 
 

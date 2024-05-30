@@ -1,13 +1,13 @@
 import React from 'react'
 import dp from './../assets/images/dp.webp'
-import {Celender, Building, Key, Update, Location, Link, Name} from './IconsSvg'
+import {Celender, Building, Key, Update, Location, Link, Name} from './PreComponent/IconsSvg'
 
 
 
 function GithubUser() {
     return (
         <>
-            <div className="bg-slate-500 w-full h-72 rounded-lg p-4 flex flex-col gap-2">
+            <div className="bg-slate-500 w-full min-h-72 rounded-lg p-4 flex flex-col gap-2">
             <div className="heading sticky top-0">
                 <h2 className='font-bold'>User:</h2>
                     
@@ -19,8 +19,9 @@ function GithubUser() {
                             <img src={dp} alt="dp" />
                         </div>
                         <div className="usenames px-2">
-                            <div className="h-2/3 user text-lg text-slate-700 drop-shadow-lg font-sans font-bold">  
-                            <img src="https://readme-typing-svg.demolab.com/?font=Gugi&pause=1000&color=334155&weight=700&multiline=true&random=true&width=435&lines=Grow+in+Flow" alt="User Name"/>
+                            <div className="h-2/3 user text-lg text-slate-700 drop-shadow-lg font-sans font-bold select-none">  
+                   
+                            <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=700&pause=1000&color=334155&size=30&random=false&width=435&lines=Grow+in+Flow" alt="User Name" />
 
                             </div>
                             <p className='h-1/3 text-xs md:text-md'>@growinflow</p>

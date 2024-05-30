@@ -1,5 +1,5 @@
 import React from 'react'
-import {Book, User, CodePc, FollowingUser} from './IconsSvg'
+import {Book, User, CodePc, FollowingUser} from './PreComponent/IconsSvg'
 import Card from './PreComponent/Card'
 
 function GitHubActivity() {
