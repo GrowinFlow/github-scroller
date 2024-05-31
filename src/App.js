@@ -12,9 +12,7 @@ function App() {
         <div className=" min-h-[80vh] flex flex-col justify-between items-center">
 
      <Header />
-
-
-
+     
      <Main />
      <br /><br /><br />
      <Footer />
