@@ -1,21 +1,15 @@
 import React, { useContext, useState } from 'react';
 import { DataContext } from './../../Context/ApiContext';
-import Pagination from '../Pagination';
+import Pagination from './Pagination';
 
 function Repostiry() {
     const { userName, repos, isError, isLoading } = useContext(DataContext);
-    const [currentPage, setCurrentPage] = useState(1);
+    const [currentItems, setCurrentItems] = useState([]);
 
-    const itemsPerPage = 5; // Adjust this number based on your preference
-    const totalPages = Math.ceil(repos.length / itemsPerPage);
-
-    const handlePageChange = (page) => {
-        if (page > 0 && page <= totalPages) {
-            setCurrentPage(page);
-        }
+    const handlePageChange = (currentPageData) => {
+      setCurrentItems(currentPageData);
     };
 
-    const paginatedRepos = repos.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 
     if (!repos || repos.length === 0) {
         return <>Not Found</>;
@@ -29,9 +23,9 @@ function Repostiry() {
 
     return (
         <>
-            <div className="grid grid-rows-auto grid-cols-2 md:grid-cols-2 lg:grid-cols-5 md:gap-4 min-h-20 gap-4 select-none overflow-hidden overflow-y-auto scroll-bar pr-2">
-                {paginatedRepos.map((repo, index) => (
-                    <div key={repo.id + index} className="repo rounded-lg min-h-[80px] bg-slate-500 p-4 flex justify-between items-center overflow-hidden transition-all ease-in duration-100 group">
+            <div className="grid grid-rows-auto grid-cols-2 gap-4 h-48 select-none overflow-hidden overflow-y-auto scroll-bar">
+                {currentItems.map((repo, index) => (
+                    <div key={repo.id + index} className="repo rounded-lg h-2/3 bg-slate-500 p-4 flex justify-between items-center overflow-hidden transition-all ease-in duration-100 group">
                         <img 
                             src={`https://github-readme-stats.vercel.app/api/pin/?username=${userName}&repo=${repo.name}&bg_color=64748b&title_color=334155&text_color=fff&icon_color=6d28d9&hide_border=true`} 
                             alt="repo" 
@@ -49,11 +43,15 @@ function Repostiry() {
                     </div>
                 ))}
             </div>
-            <Pagination 
-                currentPage={currentPage} 
-                totalPages={totalPages} 
-                onPageChange={handlePageChange} 
-            />
+            <div className="pagination-area flex justify-center items-center w-full">
+
+            <Pagination
+            totalItems={repos.length}
+            perPageItems={2}
+            returnData={repos}
+            onPageChange={handlePageChange}
+          />
+            </div>
         </>
     );
 }

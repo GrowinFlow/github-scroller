@@ -5,12 +5,7 @@ function SearchArea() {
 
 
   const { userName, setUserName,
-    userInfo,
-    isLoading,
-    isError,
-    requestN, setRequestN,
-    repos,
-    followers,} = useContext(DataContext)
+    isLoading,    requestN, setRequestN,} = useContext(DataContext)
 
 const [userInp, setUserInp] = useState(" " || userName)
 function changeUser(e){
@@ -35,13 +30,21 @@ function changeUser(e){
             type="text"
              aria-label='search github profile' />
 
-            <button
-            onClick={()=>{changeUser()}}
-            aria-label='Set user name'
-            className='px-2 md:px-4 py-1 md:py-2 text-sm flex justify-center items-center gap-2 bg-purple-700 rounded-lg shadow-md active:bg-purple-900 hover:bg-purple-800  ring-4 ring-transparent active:ring-purple-500'
-            >
-                Search <i class="fa-brands fa-github text-white"></i>
-            </button>
+<button
+    onClick={() => { changeUser(); }}
+    aria-label="Set user name"
+    className="px-2 md:px-4 py-1 md:py-2 text-sm flex justify-center items-center gap-2 bg-purple-700 rounded-lg shadow-md active:bg-purple-900 hover:bg-purple-800 ring-4 ring-transparent active:ring-purple-500"
+>
+    {isLoading ? (
+
+            <i className="fa-solid fa-arrows-rotate f-spain"></i>
+    ) : (
+      <>
+      Search <i className="fa-brands fa-github  text-white"></i>
+  </>
+    )}
+</button>
+
         </div>
 
         <div className="request-count h-16 w-80 flex justify-center items-center">
