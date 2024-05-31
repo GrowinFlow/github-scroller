@@ -49,7 +49,7 @@ const Pagination = ({ totalItems, perPageItems, returnData, onPageChange }) => {
         onClick={() => handlePageChange(i)}
         className={`flex items-center justify-center w-8 h-8 leading-tight ${currentPage === i ? 'text-white border border-purple-300 bg-slate-500 hover:bg-slate-500 ' : 'text-white bg-slate-500 border border-slate-300 hover:bg-slate-700 hover:text-slate-100'} group`}
       >
-        <span className={currentPage === i ? 'absolute text-7xl font-light text-purple-700' : ''}>{i}</span>
+        <span className={currentPage === i ? 'absolute text-3xl md:text-5xl lg:text-7xl font-light text-purple-700' : ''}>{i}</span>
       </button>
       );
     }
