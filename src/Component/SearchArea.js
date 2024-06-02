@@ -8,25 +8,33 @@ function SearchArea() {
     isLoading,    requestN, setRequestN,} = useContext(DataContext)
 
 const [userInp, setUserInp] = useState(" " || userName)
-function changeUser(e){
-  
-  setUserName(userInp)
-  setRequestN(requestN - 1)
-}
 
+function changeUser() {
+  setUserName(userInp.trim());
+  setRequestN(requestN - 1);
+}  
+function handleKeyDown(event) {
+  if (event.key === 'Enter') {
+    event.preventDefault(); // Prevent the default behavior (e.g., form submission)
+    changeUser(); // Call the changeUser function when Enter key is pressed
+  }
+}
 
 
 
   return (
     <>
-    <div className="search-area flex-col flex md:flex-row justify-between items-center">
+    <form 
+    onSubmit={(e) => e.preventDefault()}
+    className="search-area flex-col flex md:flex-row justify-between items-center">
 
         <div className="search-form flex justify-center items-center p-2 h-16 w-full bg-slate-500 rounded-lg gap-2 group">
             <input
             className='w-full h-10 p-2 px-3 text-md md:text-xl  text-slate-700 drop-shadow-lg font-medium focus:outline-none border-b-2 border-dashed focus:border-white border-slate-400 bg-slate-500'
             placeholder={`${userName}. . .`}
             value={userInp}
-            onChange={(e)=>setUserInp(e.target.value)}
+            onChange={(e) => setUserInp(e.target.value.trim())}
+            onKeyDown={handleKeyDown}
             type="text"
              aria-label='search github profile' />
 
@@ -55,7 +63,7 @@ function changeUser(e){
         </div>
 
 
-    </div>
+    </form>
     </>
   )
 }

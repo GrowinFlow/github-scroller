@@ -1,9 +1,4 @@
-import React from 'react'
-import placeHolderImg from './../assets/images/dp.jpg'
 import {Celender, Building, Key, Update, Location, Link, Name} from './PreComponent/IconsSvg'
-
-
-
 import { useContext } from 'react'
 import { DataContext } from '../Context/ApiContext'
 import GithubUserLoading from '../Loadings/GithubUserLoading'
@@ -60,7 +55,7 @@ if(isLoading){
                     <div className="details flex items-center">
 
                         <div className="dp w-20 h-20  bg-purple-700 rounded-full overflow-hidden shadow-lg">
-                            <img src={avatar_url || placeHolderImg} alt={name} />
+                            <img src={avatar_url || "bg-slate-500 animate-pulse"} alt={name} />
                         </div>
                         <div className="usenames px-2">
                             <div className="h-2/3 user text-lg text-slate-700 drop-shadow-lg font-sans font-bold select-none">  
