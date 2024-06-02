@@ -41,7 +41,7 @@ const ParticleContainer = () => {
                     },
                     modes: {
                         push: {
-                            quantity: 4,
+                            quantity: 1,
                         },
                         repulse: {
                             distance: 200,
@@ -57,8 +57,8 @@ const ParticleContainer = () => {
                         color: "#1e293b",
                         distance: 150,
                         enable: true,
-                        opacity: 0.5,
-                        width: 1,
+                        opacity: 1,
+                        width: 0.4,
                     },
                     move: {
                         direction: "none",
@@ -81,7 +81,7 @@ const ParticleContainer = () => {
                         value: 0.5,
                     },
                     shape: {
-                        type: "circle",
+                        type: "triangle",
                     },
                     size: {
                         value: { min: 1, max: 5 },

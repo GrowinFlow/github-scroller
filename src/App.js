@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <div className="w-full bg-slate-800 text-white web-logo  transition-all ease-in duration-100">
+      <div className="w-full overflow-x-hidden bg-slate-800 text-white web-logo  transition-all ease-in duration-100">
         <div className=" min-h-[80vh] flex flex-col justify-between items-center">
 <ParticleContainer />
      <Header />

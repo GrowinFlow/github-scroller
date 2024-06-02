@@ -29,7 +29,7 @@ function Repostiry() {
                         <img 
                             src={`https://github-readme-stats.vercel.app/api/pin/?username=${userName}&repo=${repo.name}&bg_color=64748b&title_color=334155&text_color=fff&icon_color=6d28d9&hide_border=true`} 
                             alt="repo" 
-                            className='scale-110 object-fit h-[100] w-[150px] md:w-[300px] group-hover:opacity-25 group-hover:absolute group-hover:h-[80px]' 
+                            className='scale-110 object-fit h-[100] w-[100px] md:w-[300px] group-hover:opacity-25 group-hover:absolute group-hover:h-[80px]' 
                         />
                         <div className="btn group-hover:relative p-4">
                             <a href={repo.html_url} target='_blank'>

@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './assets/css/style.css';
-import { DataContext, DataProvider } from './Context/ApiContext';
+import { DataProvider } from './Context/ApiContext';
 
 
 
