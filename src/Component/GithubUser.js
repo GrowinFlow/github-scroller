@@ -51,14 +51,14 @@ if(isLoading){
                 <h2 className='font-bold'>User:</h2>
                     
                 </div>
-                <div className="top-area flex justify-between items-center">
+                <div className="top-area flex justify-between items-center ">
                     <div className="details flex items-center">
 
-                        <div className="dp w-20 h-20  bg-purple-700 rounded-full overflow-hidden shadow-lg">
+                        <div className="dp h-12 w-12 md:h-20 md:w-20  bg-purple-700 rounded-full overflow-hidden shadow-lg">
                             <img src={avatar_url || "bg-slate-500 animate-pulse"} alt={name} />
                         </div>
                         <div className="usenames px-2">
-                            <div className="h-2/3 user text-lg text-slate-700 drop-shadow-lg font-sans font-bold select-none">  
+                            <div className="h-2/3 w-48 md:w-72 user text-lg text-slate-700 drop-shadow-lg font-sans font-bold select-none">  
                    
                             <img src={`https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=700&pause=1000&color=334155&size=30&random=false&width=435&lines=${name}`} alt="User Name" />
 
